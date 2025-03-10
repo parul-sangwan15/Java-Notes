@@ -7,7 +7,7 @@ package Notes;
 @FunctionalInterface
 interface A {
 
-    void show();
+    int show(int i, int j);
 
     
 }
@@ -34,15 +34,18 @@ public class LambdaExp {
 
 
 
-    /* To simplify this we use lambda expression */
+    /* To simplify this we use lambda expression (->) */
 
-    A obj = () -> System.out.println("Hey");
+    A obj = (i,j) -> { int result;
+        result = i + j;
+        return result;
+    };
 
-    obj.show();
+    // OR
+    // A obj = (i,j) -> i+j;
+
+    System.out.println(obj.show(5,4));
 }
 }
 
    
-
-    
-}
