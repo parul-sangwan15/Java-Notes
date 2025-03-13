@@ -21,7 +21,6 @@ public class CollectionAPI {
 
       Set<Integer> nums = new TreeSet<Integer>();
       
-
         /*These are object types because we haven't defined the collection type */
         nums.add(6);
         nums.add(5);
@@ -29,11 +28,16 @@ public class CollectionAPI {
         nums.add(8);
         nums.add(9);
 
+        Iterator<Integer> values = nums.iterator();
 
-        System.out.println(nums);
-        for(int n : nums){
-            System.out.println(n);
-        }
+      while(values.hasNext()){   //hasNext checks if it has any next value
+        System.out.println(values.next());      // next prints the next value
+      }
+
+        // System.out.println(nums);
+        // for(int n : nums){
+        //     System.out.println(n);
+        // }
 
     }
 }
