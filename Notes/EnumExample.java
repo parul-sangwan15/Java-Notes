@@ -1,4 +1,4 @@
-package Notes;
+package notes;
 
 
 /*  enumeration is a special data type which 

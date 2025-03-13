@@ -1,4 +1,4 @@
-package Notes;
+package notes;
 
 /* Can have my own defined exeption which inherits all the 
 features from Exception parent class*/
@@ -37,7 +37,7 @@ public class ExceptionExp {
         int j = 0;
         try{
         j = 20/i;
-        if(j != 0){
+        if(i == 0){
             //throw new ArithmeticException();     // To handle exception without stopping the application
             throw new MyException("This is a custom exception!");
         }

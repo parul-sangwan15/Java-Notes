@@ -1,9 +1,9 @@
-package Notes;
+package notes;
 
 import java.io.BufferedReader; // Class imported
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Scanner;
+// import java.util.Scanner;
 
 public class InputExp {
     public static void main(String[] args) {
@@ -11,7 +11,7 @@ public class InputExp {
 
         System.out.println("Enter your input: ");
         InputStreamReader in = new InputStreamReader(System.in);
-        BufferedReader bfr = new BufferedReader(in);  // BufferedReader requires an onject of ImputStreamReader class
+        BufferedReader bfr = new BufferedReader(in);  // BufferedReader requires an object of ImputStreamReader class
 
         try{
             int num = Integer.parseInt(bfr.readLine());

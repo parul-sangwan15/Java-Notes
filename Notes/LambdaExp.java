@@ -1,4 +1,4 @@
-package Notes;
+package notes;
 
 /* Funtional interface
  * just one abstract method declared
