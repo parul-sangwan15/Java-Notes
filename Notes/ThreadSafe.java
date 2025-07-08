@@ -9,7 +9,7 @@ package notes;
 
  class Counter{
     int count;         // shared variable between obj1 and obj2
-    public synchronized void increment(){            // synchronized allows the execution of only one thread out or multiple
+    public synchronized void increment(){            // synchronized allows the execution of only one thread out of multiple
         count++;                                     // which are sharing a variable.
     }
  }
@@ -17,7 +17,7 @@ package notes;
 public class ThreadSafe {
     public static void main(String[] args) {
         Counter ct = new Counter();
-        Runnable obj1 = () -> {
+        Runnable obj1 = () -> {                              /* Runnable: Represents a task to run in a thread */
                for(int i = 1; i <= 2000; i++ ){             /* Anonymous inner class with Lambda expression */
                 ct.increment();
                }  

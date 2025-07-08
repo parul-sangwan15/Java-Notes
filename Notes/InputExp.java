@@ -23,9 +23,9 @@ public class InputExp {
         }
 
         /* But bufferedReader is a resource 
-         * so you should utilise it and clear it after its usage
+         * so you should utilise it and clear it after its usage : Line 19
          * Avoid data leaking
-         * Also, can declare the object in try(''), it is autocloseable for some classes.
+         * Also, can declare the object in try(''), it is autocloseable for some classes. : Line 16
          
          * This is called "Try with Resources"
          */
