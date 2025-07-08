@@ -2,7 +2,7 @@ package notes;
 
 /* Funtional interface
  * just one abstract method declared
- * also caleed SAM Single abstract method
+ * also called SAM Single abstract method
  */
 @FunctionalInterface
 interface A {
